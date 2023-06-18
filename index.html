@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.M. Property Management</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <script type="text/javascript" src="public/js/page.js"></script>
+
+    <!--  FAVICON  -->
+    <link rel="icon" href="favicon.ico"> 
+</head>
+
+<body>   
+    <nav>
+        <ul>
+            <li onclick="scrollFunction4()"> HOME </li>
+            <li onclick="scrollFunction1()"> MY WORK </li>
+            <li onclick="scrollFunction2()"> SERVICES </li>
+            <li onclick="scrollFunction3()"> CONTACT ME </li>
+        </ul>
+    </nav>
+
+    <div class="mainLogo" id="mainLogo">
+        <h1> A.M. </h1>
+        <h2> Property Management </h2>
+
+        <ion-icon onclick="scrollFunction1()" class="downArrow1 downArrow" name="caret-down-outline"></ion-icon>
+    </div>
+
+
+    <div class="myWork" id="myWork">
+        <h2 class="subHeading"> My Work </h2>
+
+            <ion-icon onclick="slideShowRight()" class="leftArrow Arrows" name="chevron-back-outline"></ion-icon>
+            <ion-icon onclick="slideShowLeft()" class="rightArrow Arrows" name="chevron-forward-outline"></ion-icon>
+
+            <div id="comparison">
+                <div class="comparison1">
+                    <img src="public\img\comparison\floorAfter.jpeg" alt="">
+                    <img id="compare" src="public\img\comparison\floorBefore.jpeg" alt="">
+                    <input type="range" min="0" max="100" value="50" id="slider" name="" oninput="slide()">
+                </div>
+
+
+                <div class="comparison1 comparison2">
+                    <img src="public\img\comparison\wallAfter.jpeg" alt="">
+                    <img id="compare2" src="public\img\comparison\wallBefore.jpeg" alt="">
+                    <input type="range" min="0" max="100" value="50" id="slider2" name="" oninput="slide2()">
+                </div>
+            </div>
+        </div>
+
+        <ion-icon onclick="scrollFunction2()" class="downArrow2 downArrow" name="caret-down-outline"></ion-icon>
+    </div>
+
+
+
+    <div class="services" id="services">
+        <h2 class="subHeading"> Services </h2>
+
+        <div class="servicesGrid">
+            <div class="box a"> <img src="public\img\brush.png"> <h3> Painting </h3></div>
+            <div class="box b"> <img src="public\img\dryWall.png"> <h3> Drywall </h3> </div>
+            <div class="box c"> <img src="public\img\carpentry.png"><h3> Carpentry </h3> </div>
+            <div class="box d"> <img src="public\img\tile.png"><h3> Tiling </h3> </div>
+            <div class="box e"> <img src="public\img\door.png"><h3> Doors </h3> </div>
+            <div class="box f"> <img src="public\img\window.png"><h3> Windows </h3> </div>
+            <div class="box g"> <img src="public\img\joiner.png"><h3> Joiner </h3> </div>
+            <div class="box h"> <img src="public\img\laminate.png"><h3> Laminate Flooring </h3> </div>
+            <div class="box i"> <img src="public\img\plumbing.png"><h3> Plumbing </h3> </div>
+            <div class="box j"> <img src="public\img\wallpaper.png"><h3> Wallpapering </h3> </div>
+            <div class="box k"> <img src="public\img\fence.png"><h3> Fences </h3> </div>
+            <div class="box l"> <img src="public\img\Miscellaneous.png"><h3> Miscellaneous </h3></div>
+        </div>
+
+        <ion-icon onclick="scrollFunction3()" class="downArrow3 downArrow" name="caret-down-outline"></ion-icon>
+    </div>
+
+
+
+    <div class="contactMe" id="contactMe">
+        <h2 class="subHeading"> Contact </h2>
+
+        <div class="form">
+            <div class="number">
+
+                <ion-icon class="contactIcon" name="call-outline"></ion-icon>
+                <h4> Click the number below to give us a call </h4>
+                <a href="tel:+447944100199"> +44 7944100199 </a>
+
+                <ion-icon class="contactIcon txtIcon" name="send-outline"></ion-icon>
+                <h4> Alternatively, click the number below to leave us a text message </h4>
+                <a href="sms:+447984410021"> +44 7984410021 </a>
+            </div>
+
+            <div class="vl"></div>
+
+            <div class="contactForm">
+                <ion-icon class="contactIcon" name="mail-outline"></ion-icon>
+
+                <table>
+                    <tbody>
+                        <form action="mailto:amatusevs@gmail.com" method="post" enctype="text/plain">
+                            <tr>
+                                <td><input type="text" name="Name" placeholder="Full Name*" required></td>
+                            </tr>
+                                <td><input type="email" name="Email" placeholder="Email*" required></td>
+                            <tr>
+                                <td><input type="tel" name="Number" placeholder="Phone Number*" required></td>
+                            </tr>
+                                <td><textarea type="TextArea" name="Enquiry" placeholder="Enquiry*"></textarea></td>
+                            <tr>
+                                <td><input class="submitButton" type="submit" value="Send"></td>
+                            </tr>
+                        </form>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <ion-icon onclick="scrollFunction4()" class="downArrow4 downArrow2 downArrow" name="caret-up-outline"></ion-icon>
+    </div>
+
+    
+
+    <!-- Ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+</body>
+
+
+
+</html>
